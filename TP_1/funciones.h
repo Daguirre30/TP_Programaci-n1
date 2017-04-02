@@ -6,7 +6,7 @@ float suma (float, float);
 float resta (float, float);
 float multiplica (float, float);
 float divide (float, float);
-int factorial (int);
+long long int factorial (int);
 
 
 

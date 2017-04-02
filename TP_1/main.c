@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "funciones.h"
+#include <ctype.h>
 
 
 
@@ -10,8 +11,8 @@ float main()
     int opcion=0;
     float A;
     float B;
-    int fac;
-    int resultadoFac;
+    long int fac;
+    long long int resultadoFac;
     float resultado;
 
     while(seguir=='s')
@@ -25,7 +26,7 @@ float main()
         printf("7- Salir\n");
         scanf("%d",&opcion);
 
-    while(opcion <=0 || opcion >=8 )
+    while(opcion <=0 || opcion >=8)
     {
         printf("Error, ingrese las opciones entre el 1 y el 7 \n");
         printf("1- Calcular la suma (A+B)\n");
@@ -58,8 +59,16 @@ float main()
             case 5:
              printf("Ingresar un número entero para calcular el factorial \n");
              scanf("%d", &fac);
-             resultadoFac = factorial(fac);
-             printf("El factorial es %d \n ", resultadoFac);
+               if(fac <= 0)
+             {
+                printf("No es posible calcular factorial a numeros negativos \n");
+             }
+             else
+             {
+                resultadoFac = factorial(fac);
+                printf("El factorial es %d \n", resultadoFac);
+             }
+
                 break;
             case 6: //todas las operaciones
              printf("Ingrese primer operando \n");
@@ -79,9 +88,18 @@ float main()
              resultado = (A*B);
              printf("La multiplicacion es %f \n", resultado);
              fac= A;
-             resultadoFac = factorial(fac);
-             printf("El factorial es %d \n ", resultadoFac);
-              break;
+             if(fac <= 0)
+             {
+                printf("No es posible calcular factorial a numeros negativos \n");
+             }
+             else
+             {
+                resultadoFac = factorial(fac);
+                printf("El factorial es %d \n ", resultadoFac);
+             }
+             break;
+
+
             case 7:
                 seguir = 'n';
                 break;

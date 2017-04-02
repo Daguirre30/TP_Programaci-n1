@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 
 
 /** \brief Recibe los numeros y realiza la suma
@@ -10,10 +10,14 @@
   *
   */
 
+
+
+
   float suma(float x,float y)
   {
     printf("Ingrese primer operando \n");
-    scanf("%f",&x);
+    scanf("%f", &x);
+
     printf("Ingrese segundo operando \n");
     scanf("%f",&y);
     return x+y;
@@ -90,11 +94,11 @@
   *
   */
 
-  int factorial(int x)
+  int factorial(long long int x)
 
   {
-    int i;
-    int fac = 1;
+   long long int i;
+    long long int fac = 1;
     for (i=2; i<=x; i=i+1) fac=fac*i;
     return (fac);
 
