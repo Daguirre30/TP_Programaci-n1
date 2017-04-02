@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1491146978 source:/home/dani/Desktop/ClaseProgramaci-n2-master/Daniel Lugo/TP1 07_04_2017/TP_1_Cascara/funciones.c
+	<stdio.h>
+	<stdlib.h>
+
+1491147780 source:/home/dani/Desktop/ClaseProgramaci-n2-master/Daniel Lugo/TP1 07_04_2017/TP_1_Cascara/main.c
+	<stdio.h>
+	<stdlib.h>
+	"funciones.h"
+
+1491146982 /home/dani/Desktop/ClaseProgramaci-n2-master/Daniel Lugo/TP1 07_04_2017/TP_1_Cascara/funciones.h
+
+1491061470 /home/dani/Desktop/ClaseProgramaci-n2-master/Daniel Lugo/TP1 07_04_2017/TP_1_Cascara/funciones.c
+
